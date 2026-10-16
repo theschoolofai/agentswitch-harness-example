@@ -8,7 +8,9 @@ A minimal harness that runs on the AgentSwitch server when your team clicks **Ou
 3. Runs `run` once per instance listed in `instances`, against a **fresh copy** of that instance. Your writes are thrown away. No internet in this step.
 4. Reads `results` and shows pass/fail per task and a score in the panel.
 
-One run per team every 3 days. Default limit 20 minutes (max 30).
+One run per team every 3 days.
+
+**Runner environment:** Python **3.11** (don't require 3.12+ in `pyproject.toml`; interpreter downloads are disabled). Install can use PyPI/GitHub; the run step has no internet. Default limit 20 minutes (max 30).
 
 ## 1. `agentswitch-harness.toml` (repo root)
 ```toml
